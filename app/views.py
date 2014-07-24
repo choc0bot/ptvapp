@@ -1,9 +1,9 @@
 from flask import render_template
-from app import app
+from application import application
 from train import get_train_time, c_time
 
-@app.route('/')
-@app.route('/index')
+@application.route('/')
+@application.route('/index')
 def index():
     user = { 'nickname': 'Miguel' } # fake user
     return render_template("index.html",

@@ -1,4 +1,3 @@
-from flask import Flask
-
-application = flask.Flask(__name__)
-from app import views
+#!flask/bin/python
+from application import application
+application.run(debug = True)
