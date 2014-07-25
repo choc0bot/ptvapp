@@ -11,7 +11,7 @@ def index():
         user = user)
 
 
-@app.route('/train')
+@application.route('/train')
 def train():
 	work_train = (1155,14)
 	home_train = (1014,0)
